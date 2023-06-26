@@ -5,5 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="com.springcore.lifecycle.Dog" name="dog"
-    p:name="Tommy"/>
+          init-method="init" destroy-method="destroy"
+          p:name="Tommy"/>
+
+    <bean class="com.springcore.lifecycle.Cat" name="cat"
+          p:name="Bella"/>
+
 </beans>
