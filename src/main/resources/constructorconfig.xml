@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.springcore.constructorinjection.Certificate" name="certref">
+        <constructor-arg value="12345"/>
+    </bean>
+
+    <bean class="com.springcore.constructorinjection.Person" name="person1">
+        <constructor-arg value="Tarun"/>
+        <constructor-arg  value="12" type="int"/>
+        <constructor-arg ref="certref"/>
+        <constructor-arg>
+            <list>
+                <value>8219912115</value>
+                <value>7807695730</value>
+            </list>
+        </constructor-arg>
+    </bean>
+    <bean class="com.springcore.constructorinjection.Person" name="person2" c:name="Mehak"
+    c:personId="13" c:certificate-ref="certref" c:phoneNumbers="8847452278"/>
+</beans>
