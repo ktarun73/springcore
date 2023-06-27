@@ -7,13 +7,25 @@ public class Main {
     public static void main(String[] args) {
         AbstractApplicationContext context=new ClassPathXmlApplicationContext("lifecycleconfig.xml");
         System.out.println("++++++++++++++++++++++++++++++++++++");
+
+
+        //XML
         Dog dog=(Dog) context.getBean("dog");
         System.out.println(dog);
-        // registering shutdown hook to call destroy method
         System.out.println("++++++++++++++++++++++++++++++++++");
+
+
+        //Interfaces
         Cat cat=(Cat) context.getBean("cat");
         System.out.println(cat);
         System.out.println("++++++++++++++++++++++++++++++++++");
+//        Annotations
+//        TODO: annotation method not working
+        Mouse mouse=(Mouse) context.getBean("mouse");
+        System.out.println(mouse);
+
+        System.out.println("++++++++++++++++++++++++++++++++++");
+        // registering shutdown hook to call destroy method
         context.registerShutdownHook();
     }
 }
