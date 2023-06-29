@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        AbstractApplicationContext context=new ClassPathXmlApplicationContext("lifecycleconfig.xml");
+        AbstractApplicationContext context=new ClassPathXmlApplicationContext("springcore/lifecycleconfig.xml");
         System.out.println("++++++++++++++++++++++++++++++++++++");
 
 

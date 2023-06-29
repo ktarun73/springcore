@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context=new ClassPathXmlApplicationContext("constructorambiguity.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("springcore/constructorambiguity.xml");
         Addition add= (Addition) context.getBean("addition");
         add.doSum();
     }

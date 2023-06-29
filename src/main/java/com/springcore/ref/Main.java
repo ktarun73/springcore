@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context=new ClassPathXmlApplicationContext("referenceconfig.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("springcore/referenceconfig.xml");
         A a1=(A) context.getBean("aref1");
         System.out.println(a1);
 

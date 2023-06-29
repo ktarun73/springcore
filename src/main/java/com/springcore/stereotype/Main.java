@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context=new ClassPathXmlApplicationContext("stereotypeconfig.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("springcore/stereotypeconfig.xml");
         Student student=context.getBean("student", Student.class);
 //        System.out.println(student);
         System.out.println(student.hashCode());

@@ -8,7 +8,7 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 public class Main {
     public static void main(String[] args) {
 
-        ApplicationContext context=new ClassPathXmlApplicationContext("spelconfig.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("springcore/spelconfig.xml");
         Demo demo=context.getBean("demo", Demo.class);
         System.out.println(demo);
 
