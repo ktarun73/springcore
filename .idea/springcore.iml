@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Stereotypeconfig" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/springcore/javaconfig/Javaconfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/annotationsautowiringconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/autowiringconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/colleactionconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springjdbc/config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/constructorambiguity.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/constructorconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/lifecycleconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/referenceconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/spelconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/standalonecolleactionconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/springcore/stereotypeconfig.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="Config" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/springorm/config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>
